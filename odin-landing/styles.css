@@ -1,133 +1,184 @@
 * {
-  margin: 0 auto;
-  font-family: Roboto, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
 }
 
 .nav-bar {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   background-color: #1f2937;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #f9faf8;
+  padding: 1rem 0;
 }
 
 .nav-bar p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #e5e7eb;
+  margin: 0;
 }
 
 .nav-links {
   display: flex;
-  flex-direciton: row;
   justify-content: space-around;
-  width: 500px;
+  gap: 2rem;
+  width: auto;
 }
 
 .nav-links p {
-  color: #ebe5e7c0;
+  color: rgba(235, 229, 231, 0.75);
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links p:hover {
+  color: #f9faf8;
 }
 
 .hero {
   background-color: #1f2937;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  height: 500px;
+  justify-content: space-around;
+  gap: 2rem;
+  min-height: 500px;
+  padding: 2rem;
 }
 
 .hero-text h1 {
   color: #f9faf8;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 900;
-  padding-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .hero-text h3 {
-  font-size: 18px;
-  color: #ebe5e7c0;
-  padding-bottom: 20px;
+  font-size: 1.125rem;
+  color: rgba(235, 229, 231, 0.75);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
 }
 
 .hero-text button {
-  width: 100px;
-  height: 30px;
-  font-size: 14px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
   background-color: #3882f6;
   color: white;
   border: none;
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.hero-text button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.hero-text button:active {
+  transform: translateY(0);
 }
 
 .hero-img {
-  background-color: #f9faf8a1;
-  height: 400px;
-  width: 400px;
+  background-color: rgba(249, 250, 248, 0.63);
+  height: 25rem;
+  width: 25rem;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
 }
 
 .random-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px;
+  min-height: 400px;
+  padding: 2rem;
 }
 
 .random-info h1 {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
 }
 
 .info-container {
   display: flex;
-  flex-direction: row;
-  height: 200px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
   width: 100%;
-  flex: 1;
+  max-width: 1200px;
   flex-wrap: wrap;
 }
 
 .info-element {
   display: flex;
   flex-direction: column;
-
-  height: max-content;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 150px;
 }
 
 .info-element h3 {
-  color: #6c6d6bf6;
+  color: rgba(108, 109, 107, 0.96);
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .quote-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #e5e7eb;
-  height: 500px;
+  min-height: 500px;
+  padding: 2rem;
 }
 
 .quote-section p {
   font-weight: 300;
   color: #1f2937;
-  font-size: 36px;
+  font-size: 2rem;
+  max-width: 800px;
+  text-align: center;
+  margin: 0;
 }
 
 .CTA {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  min-height: 500px;
   color: white;
+  padding: 2rem;
+}
+
+.CTA-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
 }
 
 .CTA-text h2 {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
+  margin: 0;
 }
 
 .CTA-text h3 {
-  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 0;
+  font-weight: 400;
 }
 
 .CTA-container {
@@ -136,30 +187,37 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  height: 25%;
-  border-radius: 12px;
-}
-
-.CTA-button {
-  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .CTA-button button {
-  width: 100px;
-  height: 30px;
-  font-size: 14px;
-  background-color: #3882f6;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  background-color: transparent;
   color: white;
-  border: white 2px solid;
+  border: 2px solid white;
   font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.CTA-button button:hover {
+  background-color: white;
+  color: #3882f6;
 }
 
 .footer {
-  height: 100px;
   background-color: #1f2937;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100px;
+  padding: 1rem;
 }
