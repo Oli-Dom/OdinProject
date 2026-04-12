@@ -1,12 +1,12 @@
 const recipes = {
   "Spaghetti Bolognese": {
     description: "A classic Italian pasta dish with a rich, meaty sauce.",
-    link: "./recipes/spaghetti-bolognese.html",
+    link: "./recipes/spaghettiBolognese.html",
   },
   "Chicken Curry": {
     description:
       "A flavorful and spicy dish made with tender chicken pieces simmered in a fragrant curry sauce.",
-    link: "./recipes/chicken-curry.html",
+    link: "./recipes/chickenCurry.html",
   },
   "Vegetable Stir-Fry": {
     description:
